@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> AI 미궁 게임 </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+    <body>
+
+      <div class="intro">
+        <h3> AI와 함께하는 미궁 게임에 오신 것을 환영합니다. </h3>
+        <h3> 아래 빈칸에 '시작' 이라고 입력해주세요. </h3>
+      </div>
+
+
+      <div class="container">
+
+        <div class="form">
+          <div class="form__group field" onclick="ans_init()">
+            <input type="text" class="form__field" placeholder=" " id='input' onkeyup="next('시작', 'page1_start.html')">
+            <label for="answer" class="form__label">정답</label>
+            <span class="error" id="errorname"></span>
+          </div>
+        </div>
+
+        <div class="check" id="check" onclick="next('시작', 'page1_start.html')">
+           <div class="btn">
+              <div class="shop-now">확인</div>
+              <div class="snowflake-grid to-left">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+              <div class="snowflake-grid to-right">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
+
+
