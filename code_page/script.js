@@ -23,13 +23,20 @@ function next(answer, next_link) {
 		}
 	}
 
-	input.addEventListener("keyup", e => {
-		e.preventDefault();
+	//타이핑을 했을 때
+	input.addEventListener("keydown", e => {
+		//엔터라면 답안 확인(ans 함수 호출)
 		if(e.keyCode === 13) {
 			ans();
 		}
+		//백스페이스라면 애니메이션과 경고 문구 초기화
+		if(e.keyCode === 8) {
+			error.innerHTML = "";
+			input.style.animation="";
+		}
 	});
 
+	//확인 버튼을 클릭했을 때
 	check.addEventListener("click", () => {
 		ans();
 	});

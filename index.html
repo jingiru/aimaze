@@ -19,8 +19,8 @@
       <div class="container">
 
         <div class="form">
-          <div class="form__group field" onclick="ans_init()">
-            <input type="text" class="form__field" placeholder=" " id='input' onkeyup="next('시작', './code_page/page1_start.html')">
+          <div class="form__group field" onclick="ans_init()" >
+            <input type="text" class="form__field" placeholder=" " id='input' onkeydown="next('시작', './code_page/page1_start.html')">
             <label for="answer" class="form__label">정답</label>
             <span class="error" id="errorname"></span>
           </div>
