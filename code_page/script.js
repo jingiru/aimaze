@@ -1,17 +1,11 @@
-function ans_init() {
-	let input = document.getElementById("input");
-	let error = document.getElementById("errorname");
-
-	error.innerHTML = "";
-	input.style.animation='';
-}
-
 function next(answer, next_link) {
 	let input = document.getElementById("input");
 	let error = document.getElementById("errorname");
 	let check = document.getElementById("check");
 	
-	ans_init();
+	//시작 전 경고 문구와 애니메이션 초기화
+	error.innerHTML = "";
+	input.style.animation='';
 
 	function ans()
 	{
@@ -36,6 +30,13 @@ function next(answer, next_link) {
 			input.style.animation="";
 		}
 	});
+
+	//확인 버튼을 클릭했을 때
+	input.addEventListener("click", () => {
+		error.innerHTML = "";
+		input.style.animation='';
+	});
+
 
 	//확인 버튼을 클릭했을 때
 	check.addEventListener("click", () => {
