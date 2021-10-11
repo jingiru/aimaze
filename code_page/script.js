@@ -3,7 +3,6 @@ function ans_init() {
 	let error = document.getElementById("errorname");
 
 	error.innerHTML = "";
-	input.value="";
 	input.style.animation='';
 }
 
@@ -11,6 +10,8 @@ function next(answer, next_link) {
 	let input = document.getElementById("input");
 	let error = document.getElementById("errorname");
 	let check = document.getElementById("check");
+	
+	ans_init();
 
 	function ans()
 	{
