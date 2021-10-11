@@ -24,14 +24,9 @@ function next(answer, next_link) {
 		if(e.keyCode === 13) {
 			ans();
 		}
-		//백스페이스라면 애니메이션과 경고 문구 초기화
-		if(e.keyCode === 8) {
-			error.innerHTML = "";
-			input.style.animation="";
-		}
 	});
 
-	//확인 버튼을 클릭했을 때
+	//입력창을 클릭했을 때
 	input.addEventListener("click", () => {
 		error.innerHTML = "";
 		input.style.animation='';
