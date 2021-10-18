@@ -53,7 +53,7 @@ function to2() {
 	function ans()
 	{
 		if(input.value == "라온이")
-			location.href="./code_page/page2_raon.html";
+			location.href="./page2_raon.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
