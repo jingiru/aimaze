@@ -38,6 +38,19 @@ body {
 }
 
 
+
+
+/*---------line(hr)---------*/
+
+hr {
+  border: 1px dashed #8c8b8b;
+}
+
+
+
+
+
+
 /*----------label----------*/
 
 @keyframes shake {
