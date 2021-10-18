@@ -96,7 +96,7 @@ function to3() {
 	function ans()
 	{
 		if(input.value == "지도학습")
-			location.href="./code_page/page3_ml.html";
+			location.href="./page3_ml.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
