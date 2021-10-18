@@ -1,4 +1,4 @@
-function next(answer, next_link) {
+function to1() {
 	let input = document.getElementById("input");
 	let error = document.getElementById("errorname");
 	let check = document.getElementById("check");
@@ -9,8 +9,8 @@ function next(answer, next_link) {
 
 	function ans()
 	{
-		if(input.value == answer)
-			location.href=next_link;
+		if(input.value == "시작")
+			location.href="./code_page/page1_start.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
