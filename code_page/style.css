@@ -49,7 +49,7 @@ body {
 /*---------line(hr)---------*/
 
 hr {
-  border: 2px dashed; #8c8b8b;
+  border: 1px dashed; #8c8b8b;
   margin: auto;
   width: 800px;
 }
