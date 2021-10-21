@@ -38,14 +38,20 @@ body {
 }
 
 
+.notice{
+  color: #fff;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2rem;
+}
 
 
 /*---------line(hr)---------*/
 
 hr {
-  border: 1px dashed #8c8b8b;
-  width:20%;
-  margin:0 auto;
+  border: 2px dashed; #8c8b8b;
+  margin: auto;
+  width: 800px;
 }
 
 
