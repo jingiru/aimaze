@@ -352,7 +352,7 @@ function to9() {
 
 	function ans()
 	{
-		if(input.value == "on")
+		if(input.value == "통과")
 			location.href="./page9_pass.html";
 		else
 		{
