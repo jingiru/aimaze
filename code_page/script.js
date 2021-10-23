@@ -266,8 +266,8 @@ function to7() {
 
 	function ans()
 	{
-		if(input.value == "라온이")
-			location.href="./page2_raon.html";
+		if(input.value == "화목일월금토수")
+			location.href="./page7_week.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
@@ -309,8 +309,8 @@ function to8() {
 
 	function ans()
 	{
-		if(input.value == "지도학습")
-			location.href="./page3_ml.html";
+		if(input.value == "6528")
+			location.href="./page8_ml.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
@@ -352,8 +352,8 @@ function to9() {
 
 	function ans()
 	{
-		if(input.value == "40")
-			location.href="./page4_40.html";
+		if(input.value == "on")
+			location.href="./page9_on.html";
 		else
 		{
 			input.style.animation='shake 0.5s';

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> AI 미궁 게임 </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./style.css">
+      <script type="text/javascript" src="./script.js"></script> 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+      <br>
+      <div class problem_box style="border:white; border-width:3px; border-style:solid;">
+         <h1 style="color:white">  　　　일곱 번째 방　　　  </h1>
+      </div>
+
+
+      <div class="story">
+
+         <br>
+         <h4> 하.. 너무 어려웠어 라온아 </h4>
+         <h4> 편하게 월화수목 이런 식으로 쓰면 좋잖아? </h4>
+
+
+         <br>
+         <h4 style="color:skyblue;"> 맞아! 그래서 데이터를 활용할 때는 정제된 데이터가 중요한거야 </h4>
+
+         <pre style="font-size: 20px;">
+
+아니 그런 뜻이 아니고...
+
+불평이나 불만에 대해서는 적절한 대처를 모르는 라온이었다.
+아무래도 그런 부분은 학습이 안 된 것 같다.
+어쩌면 학습이 너무 잘 되서 모른 척 하는 걸수도?</pre>
+
+         <br>
+         <h4 style="color:skyblue;"> 이번 문제는 내가 직접 소개해 줄게! </h4>
+         <h4 style="color:skyblue;"> '비슷한 것끼리 묶어라!' 라는 문제야 </h4>
+
+         <br>
+         <h4> 음.. 어떻게? </h4>
+
+         <br>
+         <img src = "../image/page7-1.png" width="600px">
+         <h4 style="color:skyblue;"> 자 예를 들어보자! </h4>
+         <h4 style="color:skyblue;"> 노란색 과일과 빨간색 과일을 이렇게 각각 그룹으로 묶었어 </h4>
+         <h4 style="color:skyblue;"> 이 때 그룹을 묶는 기준은 뭐지? </h4>
+         
+         <br>
+         <h4> 음.. 색! 색깔!? </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 그렇지! 우리 AI가 정말 잘 하는 일 중 하나가 이거야~ </h4>
+         <h4 style="color:skyblue;"> 특징을 파악해서 규칙을 찾아내고 군집이라고 하는 그룹을 만들지 </h4>
+
+         <br>
+         <h4> 아! 나 수업 시간에 들어봤던 것 같아! </h4>
+         <h4> 그거 비지도학습! 맞지? </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 대박! 정말 대단하다! 맞아 비지도학습. </h4>
+         <h4 style="color:skyblue;"> 어떤 데이터의 규칙을 파악하는 것은 인간도 충분히 잘 하지만 </h4>
+         <h4 style="color:skyblue;"> 데이터의 개수가 엄청 많다면 비지도학습으로 금방~ 해결할 수 있지! </h4>
+         <h4 style="color:skyblue;"> 이번 문제도 데이터를 AI가 그룹화 한 것을 나타낸거야~ </h4>
+         <h4 style="color:skyblue;"> 하지만! AI도 가끔 실수를 하기도 해 </h4>
+         <h4 style="color:skyblue;"> 실수한 부분을 찾아볼 수 있겠어? </h4>
+
+         <br>
+         <img src = "../image/page7-2.png" width="80%">
+
+
+         <pre style="font-size: 20px;">
+
+난 인공지능이 아닌데.. ㅜㅜ
+후.. 어쨌든 풀어보자.
+아니 근데 이거 숫자가 너무 많은데?</pre>
+
+         <br>
+      </div>
+
+      <div class="problem">
+         
+         <h4> 문제 : 잘못 그룹화 된 숫자는? </h4>
+         <h5> 힌트 : 2001년부터 </h5>
+         <h5> 정답 유형 : 숫자 </h5>
+
+      </div>
+
+
+      <div class="container">
+
+        <div class="form">
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="answer" id='input' onkeydown="to8()">
+            <label for="answer" class="form__label">정답</label>
+            <span class="error" id="errorname"></span>
+          </div>
+        </div>
+
+        <div class="check" id="check" onclick="to8()">
+           <div class="btn">
+              <div class="shop-now">확인</div>
+              <div class="snowflake-grid to-left">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+              <div class="snowflake-grid to-right">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="notice">
+         <br>
+         <br>
+         <hr>
+
+         <h3> ㅡ 게임 안내 ㅡ </h3>
+
+         <div style="line-height:20%;"> <!-- 하위 줄높이를 50%만큼 적게 설정 -->
+            <br>
+         </div>
+
+         <pre style="font-size: 20px;">
+본 게임은 AI교육과 관련된 내용으로 구성된 미궁 게임입니다.
+
+문제는 이야기를 기반으로 출제되지만, 이야기는 문제 해결과는 관련이 없습니다.
+
+문제를 풀고 정답을 입력한 후 확인을 누르면 다음 방으로 이동할 수 있습니다.
+</pre>
+
+         <hr>
+         <br>
+         <br>
+      </div>
+
+
+
+  </body>
+
+</html>
+
+

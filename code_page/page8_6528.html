@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> AI 미궁 게임 </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./style.css">
+      <script type="text/javascript" src="./script.js"></script> 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+      <br>
+      <div class problem_box style="border:white; border-width:3px; border-style:solid;">
+         <h1 style="color:white">  　　　여덟 번째 방　　　  </h1>
+      </div>
+
+
+      <div class="story">
+         <br>
+         <br>
+         <img src = "../image/page8-1.png" width="500">
+
+         <pre style="font-size: 20px;">
+
+칙-
+방에 들어오자마자 또 스피커가 켜지는 소리가 들렸다.
+방 안에는 온갖 잡동사니, 종이, 낙서 등이 어지럽게 널려져 있었다.</pre>
+         <br>
+         <div class="anounce">
+            이번 방은 보물찾기 입니다. <p> 어딘가에 있을 정답을 찾아주세요
+
+         </div>
+
+         <br>
+         <h4> 보물찾기? 어릴 때 하던 그 게임? </h4>
+
+
+         <br>
+         <h4 style="color:skyblue;"> 맞아! 보물찾기 </h4>
+         <h4 style="color:skyblue;"> 그런 경험이 있지 않아?  </h4>
+         <h4 style="color:skyblue;"> 힘들게 찾던 물건이 바로 눈 앞에 있는 상황!  </h4>
+
+         <img src = "../image/page8-2.gif" width="500">
+
+         <pre style="font-size: 20px;">
+
+라온이는 프로젝터처럼 벽에 빛을 쏘아
+영상을 하나 보여주었다.</pre>
+
+         <br>
+         <h4> ㅋㅋㅋ나도 저런 적 있지! </h4>
+         <h4> 사람 사는게 정말 다 똑같구나  </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 맞아 등화불명! 등잔 밑이 어둡다고도 하지? </h4>
+         <h4 style="color:skyblue;"> 어쩌면 이런 상황은 편견 때문에 생긴 걸지도 몰라 </h4>
+         <h4 style="color:skyblue;"> 좁은 시야로 한쪽으로 치우친 생각을 하는 것 말이야 </h4>
+
+         <br>
+         <h4> 맞아 살다보면 크고 작은 편견을 가질 수 있어 </h4>
+         <h4> 근데 갑자기 그건 왜? </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 편견은 AI를 학습하는 데 있어서도 굉장히 중요하거든! </h4>
+         <h4 style="color:skyblue;"> 한국 사람이 만든 AI 로봇과 미국 사람이 만든 AI 로봇. </h4>
+         <h4 style="color:skyblue;"> 같을까? 다를까? </h4>
+         
+         <br>
+         <h4> 당연히 다르겠지? </h4>
+         <h4> 그게 편견이라는 거야? </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 그렇지! 문화적 편견도 AI 학습에 영향을 주거든 </h4>
+         <h4 style="color:skyblue;"> 그래서 AI를 학습시킬 땐 학습 데이터에 편견이 반영되지 않았는지 항상 주의해야 해! </h4>
+
+         <br>
+         <h4> 음.. 그러니까 이번 방의 문제의 정답을 찾으려면... </h4>
+         <h4> 편견을 갖지 말고 넓은 시야로 방을 둘어보아라? </h4>
+         <br>
+         <h4 style="color:skyblue;"> 오! 좋아! 벌써 시야가 넓어진 것 같은데!? </h4>
+         <h4 style="color:skyblue;"> 찾아보자! 편견없이! 이번 방의 정답! </h4>
+
+         <br>
+      </div>
+
+      <div class="problem">
+         
+         <h4> 문제 : 정답을 찾으세요 </h4>
+         <h5> 힌트 : 평소 무시했던 것이 정답을 갖고 있다. </h5>
+         <h5> 정답 유형 : 한글 </h5>
+
+      </div>
+
+
+      <div class="container">
+
+        <div class="form">
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="answer" id='input' onkeydown="to9()">
+            <label for="answer" class="form__label">정답</label>
+            <span class="error" id="errorname"></span>
+          </div>
+        </div>
+
+        <div class="check" id="check" onclick="to9()">
+           <div class="btn">
+              <div class="shop-now">확인</div>
+              <div class="snowflake-grid to-left">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+              <div class="snowflake-grid to-right">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="notice">
+         <br>
+         <br>
+         <hr>
+
+         <h3> ㅡ 게임 안내 ㅡ </h3>
+
+         <div style="line-height:20%;"> <!-- 하위 줄높이를 50%만큼 적게 설정 -->
+            <br>
+         </div>
+
+         <pre style="font-size: 20px;">
+본 게임은 AI교육과 관련된 내용으로 구성된 미궁 게임입니다.
+
+문제는 이야기를 기반으로 출제되지만, 이야기는 문제 해결과는 관련이 없습니다.
+
+정답으로 통과를 입력한 후 확인을 누르면 다음 방으로 이동할 수 있습니다.
+</pre>
+
+         <hr>
+         <br>
+         <br>
+      </div>
+
+
+
+  </body>
+
+</html>
+
+
