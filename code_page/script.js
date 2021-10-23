@@ -438,8 +438,8 @@ function toend() {
 
 	function ans()
 	{
-		if(input.value >= 2239 && input.value <= 2259)
-			location.href="./page5_g3.html";
+		if(input.value == "잘가")
+			location.href="./page11_end.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
