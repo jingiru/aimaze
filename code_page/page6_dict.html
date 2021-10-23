@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> AI 미궁 게임 </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./style.css">
+      <script type="text/javascript" src="./script.js"></script> 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+      <br>
+      <div class problem_box style="border:white; border-width:3px; border-style:solid;">
+         <h1 style="color:white">  　　　여섯 번째 방　　　  </h1>
+      </div>
+
+
+      <div class="story">
+
+         <br>
+         <h4> 찾았다..! 사전. </h4>
+         <pre style="font-size: 20px;">
+
+어지럽게 책이 놓여있는 도서관에서
+사전을 찾는 것 또한 쉽지 않은 일이었다.
+
+책장에서 사전을 빼자마자 책장이 움직이면서 통로가 열렸다.</pre>
+
+         <br>
+         <h4 style="color:skyblue;"> 좋아! 생각보다 잘 풀잖아?! </h4>
+         <h4 style="color:skyblue;"> 이렇게 정리되어 있지 않은 곳에서 사전을 찾으니까 어때? </h4>
+
+         <br>
+         <h4> 당연히 힘들지. </h4>
+
+         <br>
+         <h4 style="color:skyblue;"> 맞아! 우리 AI는 이렇게 쌓여있는 자료들을 데이터라고 불러 </h4>
+         <h4 style="color:skyblue;"> 그리고 방대한 규모에 빠른 탐색이 가능한 자료를 빅데이터라고 하지 </h4>
+         <h4 style="color:skyblue;"> 사전을 펼쳤을 때 우리는 원하는 단어를 빠르게 찾을 수 있잖아? </h4>
+         <h4 style="color:skyblue;"> 그것처럼 빅데이터는 수많은 데이터가 잘 정리되어 있고, 우리 AI가 학습하는데 활용되지 </h4>
+         
+         <br>
+         <h4> 정리가 되어있지 않다는 건 어떤 의미야? </h4>
+         <h4> 4시 30분, 4:30, 04-30 이렇게 제각각인 자료들을 말하는건가? </h4>
+
+
+         <br>
+         <h4 style="color:skyblue;"> 와! 대단한데? </h4>
+         <h4 style="color:skyblue;"> 맞아. 그런 데이터를 정제되지 않은 데이터라고 해 </h4>
+         <h4 style="color:skyblue;"> 원하는 목적에 맞게 데이터의 형식이 정해지는 것도 굉장히 중요하거든 </h4>
+         <h4 style="color:skyblue;"> 그 정도로 이해했다면 이번 방 문제. 쉽게 풀 수 있겠는걸? </h4>
+
+
+         <pre style="font-size: 20px;">
+
+
+말은 그렇게 했지만 라온이의 말은 그다지 신뢰감이 들지 않았다.
+제발 쉬웠으면... 하는 생각을 하면서 문제를 들여다보았다. </pre>
+         <br>
+
+      </div>
+
+      <div class="problem">
+         
+         <h4> 문제 : 이 책은? </h4>
+         <h5> 힌트 : 빅데이터와 탐색 </h5>
+         <h5> 정답 유형 : 한글 </h5>
+
+      </div>
+
+
+      <div class="container">
+
+        <div class="form">
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="answer" id='input' onkeydown="to6()">
+            <label for="answer" class="form__label">정답</label>
+            <span class="error" id="errorname"></span>
+          </div>
+        </div>
+
+        <div class="check" id="check" onclick="to6()">
+           <div class="btn">
+              <div class="shop-now">확인</div>
+              <div class="snowflake-grid to-left">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+              <div class="snowflake-grid to-right">
+                 <div class="snowflake-item border-bottom border-right">
+                    <div class="sub-items border-right border-bottom pull-down">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-bottom border-left">
+                    <div
+                       class="sub-items border-right border-bottom r-90 pull-down-right"
+                       >
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-right">
+                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+                 <div class="snowflake-item border-top border-left">
+                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                       <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="notice">
+         <br>
+         <br>
+         <hr>
+
+         <h3> ㅡ 게임 안내 ㅡ </h3>
+
+         <div style="line-height:20%;"> <!-- 하위 줄높이를 50%만큼 적게 설정 -->
+            <br>
+         </div>
+
+         <pre style="font-size: 20px;">
+본 게임은 AI교육과 관련된 내용으로 구성된 미궁 게임입니다.
+
+문제는 이야기를 기반으로 출제되지만, 이야기는 문제 해결과는 관련이 없습니다.
+
+문제를 풀고 정답을 입력한 후 확인을 누르면 다음 방으로 이동할 수 있습니다.
+</pre>
+
+         <hr>
+         <br>
+         <br>
+      </div>
+
+
+
+  </body>
+
+</html>
+
+

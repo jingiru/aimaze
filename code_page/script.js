@@ -223,8 +223,8 @@ function to6() {
 
 	function ans()
 	{
-		if(input.value == "시작")
-			location.href="./code_page/page1_start.html";
+		if(input.value == "사전")
+			location.href="./code_page/page6_dict.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
