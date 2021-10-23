@@ -310,7 +310,7 @@ function to8() {
 	function ans()
 	{
 		if(input.value == "6528")
-			location.href="./page8_ml.html";
+			location.href="./page8_6528.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
@@ -353,7 +353,7 @@ function to9() {
 	function ans()
 	{
 		if(input.value == "on")
-			location.href="./page9_on.html";
+			location.href="./page9_pass.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
