@@ -224,7 +224,7 @@ function to6() {
 	function ans()
 	{
 		if(input.value == "사전")
-			location.href="./code_page/page6_dict.html";
+			location.href="./page6_dict.html";
 		else
 		{
 			input.style.animation='shake 0.5s';
